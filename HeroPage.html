@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hero Page Project</title>
-    <style>
-      @import url('./HeroGrid.css');
-    </style>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Page</title>
+    <link rel="stylesheet" href="HeroGrid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
     <header id="hero">
-        <nav id="site-nav">
+        <nav id="hero-nav">
+            <h1><a class="logo" href="#">Zoom Letter</a></h1>
             <ul>
-                <li class="symbol"><a href="HeroPage.html">Home</a></li>
-                <li><a href="#">page1</a></li>
-                <li><a href="#">page2</a></li>
-                <li><a href="#">page3</a></li>
-                <li><a href="#">page4</a></li>
-                <li class="toggle"><a href="#">page5</a></li>
-                <li class="button"><a href="#">page6</a></li>
+                <li><a class="button2 main" href="#">Log in</a></li>
+                <li><a class="button primary" href="#">Sign up</a></li>
+                <li><a class="button secondary" href="#">Merchendise</a></li>
             </ul>
         </nav>
+        <section id="sign-up-discount">
+            <p><b>Only $1.50 a month!</b> Subscribe now to get <b>3 months</b> of free news letters and emails!</p>
+        </section>
         <section id="tagline">
-            <h1>Lorem Ipsum</h1>
-            <p>Ipsum Lorem</p>
-            <p><a class= "button" href="#">call to action</a></p>
+            <h1>Quick and Easy Subscription!</h1>
+            <p>As much action as you want. Sleek, powerful muscle cars to spacious and luxurious sedans.</p>
+            <div><a class="button primary" href="#">Sign up Here</a></div>
         </section>
     </header>
     <main>
-        <article>
-            <h2>Cars Lorem</h2>
-            <p>article paragraph</p>
-        </article>
+        <section id="products">
+            <div class="card">
+                <div class="media icon"><span class="package"></span></div>
+                <h2>Keep yourself updated!</h2>
+                <p>Automobiles are a fast moving technology that more often than not, can be difficult to keep up with. Our newsletter keeps you updated on the latest designs, concepts, and engines.</p>
+            </div>
+            <div class="card">
+                <div class="media icon"><span class="blender"></span></div>
+                <h2>For car lovers, by car lovers</h2>
+                <p>Like you, we do the work ourselves, from DIYs and engine rebuilds to driving, buying, and selling. There is no car question we can't answer.</p>
+            </div>
+            <div class="card">
+                <div class="media icon"><span class="discount"></span></div>
+                <h2>No Spam, Just Cars</h2>
+                <p>We’re dedicated to respect your privacy and will never sell your info or spam you.</p>
+            </div>
+            <div class="card">
+                <div class="media icon"><span class="shipping"></span></div>
+                <h2>Our Benifits</h2>
+                <p>Get Discounted prices on posters, clothing, models, and more! </p>
+            </div>
+        </section>
     </main>
-
-  <body>
-    <h1>Hero Page</h1>
-    <section class="hero-grid">
-    <div
-        class="card"
-        style="background-image:url('')"
-        ></div>
-    <div
-        class="card"
-        style="background-image:url('')"
-        ></div>
-
-      
-    </section>
-
-    <section class="hero-grid">
-      <div class="card">main</div>
-    </section>
-    
-  </body>
+    <footer>
+        <p>Site designed by Lukas Semenyuk &copy; 2022</p>
+        <p>Inspired by the design of Chris Winikka</p>
+    </footer>
+</body>
 </html>

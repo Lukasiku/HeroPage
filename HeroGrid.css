@@ -1,0 +1,153 @@
+:root {
+  --dark-blue: #003b58;
+  --light-blue: #d4e1e7;
+  --brown: #9F4529;
+  --royal-blue: #4169e1;
+  --dark-grey: #555152;
+  --body-bg: #fff;
+  --white: #fff;
+  --black: #000;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 120%;
+  color: black);
+  background-color: var(--body-bg);
+  margin: 0;
+  font-weight: 400;
+}
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+header, main, footer {
+  margin: 0;
+}
+a.button {
+  display: inline-block;
+  width: auto;
+  padding: 0.5em 1em;
+  background-color: var(--dark-blue);
+  border-radius: 1em;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a.button2 {
+  display: inline-block;
+  width: auto;
+  padding: 0.5em 1em;
+  background-color: var(--black);
+  border-radius: 1em;
+  color: var(--black);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a.logo {
+  display: inline-block;
+  width: auto;
+  padding: 0.5em 1em;
+  background-color: var(--white);
+  border-radius: 1em;
+  color: black;
+}
+a.button.primary {
+  background-color: var(--royal-blue);
+}
+a.button.secondary {
+  background-color: var(--dark-blue)
+}
+a.button2.main {
+  background-color: var(--white);
+}
+#hero nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  font-size: small;
+}
+#hero nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+}
+#hero nav a {
+  display: block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+nav a {
+  color: var(--dark-grey);
+}
+#hero {
+  background-image: url("images/pexels-jae-park-3849554.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+}
+#hero-nav {
+  grid-area: nav;
+}
+#sign-up-discount {
+  grid-area: discnt;
+  background-color: var(--brown);
+  color: var(--body-bg);
+  display: flex;
+  padding: 0.5em 1em;
+}
+#sign-up-discount b {
+  text-transform: uppercase;
+}
+#tagline {
+  grid-area: tag;
+  background-color: #d4d4d4;
+  align-self: center;
+  padding: 0.5em 1em 1em;
+}
+#products {
+  display: grid;
+}
+#products {
+  font-size: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px)1fr);
+  column-gap: 2em;
+}
+div.card {
+  padding: 1em;
+}
+footer {
+  color: white;
+  padding: 1em;
+  background-color: var(--dark-blue);
+}
+@media only screen and (min-width: 600px) {
+  #hero {
+    background-image: url("images/pexels-jae-park-3849554.jpg");
+    background-size: cover;
+    background-position: top left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 4fr 2fr 1fr;
+    grid-template-rows:
+      minmax(100px, auto)
+      minmax(80px, auto)
+      minmax(50vh, 50vh);
+    grid-template-areas:  
+      ". nav nav nav nav ."
+      "discnt discnt discnt discnt discnt discnt"
+      ". tag tag . . .";
+  }
+}
+@media only screen and (min-width: 900px) {
+  #hero {
+    background-position: top left;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  #hero {
+    background-position: bottom left;
+  }
+}
